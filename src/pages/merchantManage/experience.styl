@@ -1,0 +1,33 @@
+@import "~common/stylus/variable"
+@import "~common/stylus/mixin"
+.home
+  wrapper()
+  .right-page
+    position absolute
+    left 0
+    right 0
+    top $breadcrumb-height
+    bottom 0px
+    padding 0 $left
+    .searchBox
+      .box
+        display inline-block
+        .boxlabel
+          float left
+          height 48px
+          line-height 48px
+          margin-right 6px
+        .marginRight
+          margin-right 6px
+        .normalWidth
+          width 100px;
+        .normalWidth-l
+          width 120px;
+        .overflow
+          overflow hidden
+        // .mu-text-field
+        //   width 120px
+      .boxpdl
+        margin-left 12px;
+      .verticalAlignBottom
+        vertical-align bottom

@@ -1,0 +1,100 @@
+@import "~common/stylus/variable"
+.layout
+  position relative;
+  height 100%;
+  width 100%;
+  background-color: rgb(236, 236, 236);
+  .header
+    position absolute;
+    left 0
+    right 0
+    top 0
+    height $header-height // 44px
+    line-height $header-height
+    background-color: $color-theme;
+    padding-left $left;
+    color: $color-text-white;
+    z-index 1111
+    .logo
+      font-size: $font-size-medium-x;
+      display: inline-block;
+      cursor pointer
+      a
+        color white
+    .right
+      float right;
+      font-size $font-size-medium
+      .username
+        margin-right 12px
+      .demo-flat-button
+        height 18px;
+        line-height 18px;
+        width 18px;
+        min-width 0;
+        font-size 18px;
+        padding 22px 22px 22px 28px !important;
+        color $color-text-white;
+  .content
+    position absolute;
+    left 0;
+    right 0;
+    bottom $header-height
+    top $header-height
+    overflow hidden
+    .content-wrapper
+      position relative
+      height 100%;
+      display flex;
+      .content-left
+        position relative
+        flex 0 0 200px;
+        background-color: $color-menu-background;
+      .content-right
+        position relative
+        width 100%;
+        flex 1;
+        background-color: $color-background
+        .breadcrumb
+          height $breadcrumb-height;
+          line-height $breadcrumb-height;
+          padding: 0 $left;
+          background-color $color-breadcrumb-background;
+          font-size $font-size-small;
+          border-bottom 1px solid #efefef
+          .iconHome
+            color $color-text-AD
+            cursor pointer
+            font-size $font-size-medium;
+          .breadcrumbText
+            color $color-text-AD
+            font-weight bold
+          .breadcrumbTextCurrent
+            color $color-theme
+          .mu-breadcrumb-item-separator
+            margin 0 0
+        // .mu-auto-complete
+        //   overflow hidden
+        //   .mu-text-field
+        //     margin-bottom 0 !important
+        //     .mu-text-field-content
+        //       padding-bottom 0 !important
+        // .mu-text-field
+        //   min-height 0
+        .mu-dropDown-menu-text-overflow
+          text-align center
+        .mu-text-field
+          width auto
+          min-width auto
+        // .mu-text-field-hint
+        //   text-align center
+  .footer
+    position absolute;
+    left 0;
+    right 0;
+    bottom 0;
+    height $header-height
+    line-height $header-height
+    color: $color-text-white;
+    font-size $font-size-small;
+    text-align: center;
+    background-color $color-theme;
